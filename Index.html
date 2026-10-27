@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Biel Ferrer · Portfolio de marketing digital</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Newsreader:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F2F4F7;--ink:#14213D;--mute:#4D5B75;--acc:#0F6E7A;--line:#D5DAE3;--card:#FFFFFF;color-scheme:light;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0E1626;--ink:#E8ECF4;--mute:#A3AFC4;--acc:#5CC3CF;--line:#25324A;--card:#16213A;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0E1626;--ink:#E8ECF4;--mute:#A3AFC4;--acc:#5CC3CF;--line:#25324A;--card:#16213A;color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.1rem/1.65 "Newsreader",Georgia,serif}
+.w{max-width:960px;margin:0 auto;padding:0 22px}
+h1,h2,h3{font-family:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif;line-height:1.08;margin:0}
+h1{font-weight:800;font-size:clamp(2.3rem,7vw,4.6rem);letter-spacing:-.03em;max-width:16ch}
+h2{font-weight:800;font-size:clamp(1.6rem,4vw,2.3rem);letter-spacing:-.02em;margin-bottom:22px}
+h3{font-weight:600;font-size:1.3rem;margin-bottom:6px}
+p{margin:0 0 14px;max-width:64ch}
+ul{margin:0 0 14px;padding-left:20px;max-width:64ch}
+li{margin-bottom:6px}
+a{color:var(--acc)}
+a:focus-visible{outline:3px solid var(--acc);outline-offset:3px}
+header{padding:72px 0 52px;border-bottom:1px solid var(--line)}
+.name{font:600 1.1rem "Bricolage Grotesque",sans-serif;color:var(--mute);margin-bottom:14px}
+.lead{font-size:1.28rem;color:var(--mute);margin-top:24px;max-width:54ch}
+.pill{display:inline-block;margin:6px 8px 0 0;padding:7px 14px;border:1px solid var(--acc);border-radius:99px;font:600 .92rem "Bricolage Grotesque",sans-serif;color:var(--acc)}
+section{padding:56px 0;border-bottom:1px solid var(--line)}
+.proj{display:grid;grid-template-columns:1fr;gap:16px;padding:28px 0;border-top:1px solid var(--line)}
+.proj:first-of-type{border-top:0;padding-top:0}
+@media(min-width:760px){.proj{grid-template-columns:230px 1fr;gap:36px}}
+.meta{font:600 .95rem/1.4 "Bricolage Grotesque",sans-serif;color:var(--mute)}
+.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:14px 0;max-width:460px}
+@media(min-width:520px){.stats{grid-template-columns:repeat(4,1fr)}}
+.stats div{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font:600 .8rem/1.3 "Bricolage Grotesque",sans-serif;color:var(--mute)}
+.stats b{display:block;font-size:1.35rem;color:var(--ink)}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.tags span{padding:4px 11px;background:var(--card);border:1px solid var(--line);border-radius:6px;font:600 .85rem "Bricolage Grotesque",sans-serif}
+.two{display:grid;gap:20px;grid-template-columns:1fr}
+@media(min-width:760px){.two{grid-template-columns:1fr 1fr}}
+.box{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:22px}
+.box p,.box ul{margin-bottom:0}
+.box h3{margin-bottom:10px}
+footer{padding:56px 0 72px}
+.btn{display:inline-block;margin-top:18px;padding:12px 20px;border:0;border-radius:8px;background:var(--acc);color:var(--bg);font:800 1rem "Bricolage Grotesque",sans-serif;cursor:pointer}
+.btn:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.btn[hidden],[data-cvnote][hidden]{display:none}
+.say{display:block;margin-top:8px;font:600 .9rem "Bricolage Grotesque",sans-serif;color:var(--mute)}
+.sw{display:flex;margin:16px 0;border-radius:6px;overflow:hidden;border:1px solid var(--line);max-width:420px}
+.sw span{flex:1;padding:26px 6px 8px;font:600 .72rem "Bricolage Grotesque",sans-serif;text-align:center}
+</style>
+</head>
+<body>
+<header><div class="w">
+<div class="name">Biel Ferrer · Collbató, Barcelona</div>
+<h1>Analizo el mercado antes de comunicar.</h1>
+<p class="lead">Estudiante de CFGS Marketing y Publicidad, con base en sistemas y redes. Me centro en investigación, datos y KPIs, y redacto en catalán y castellano. Busco unas prácticas FCT en una agencia de marketing digital.</p>
+<span class="pill">Candidatura: Prácticas de Marketing Digital · Eximia Studio</span>
+<span class="pill">Disponibilidad: 4 h diarias, de 7:30 a 14:30</span>
+<div><button class="btn" data-cv hidden>Descargar mi CV (PDF)</button><span class="say" data-cvnote hidden>La descarga no está disponible en esta vista. Escríbeme y te envío el CV.</span><span class="say" role="status" data-cvmsg></span></div>
+</div></header>
+
+<section><div class="w">
+<h2>Proyectos</h2>
+
+<article class="proj">
+<div class="meta">Investigación y KPIs<br>Proyecto de clase, equipo de 4</div>
+<div>
+<h3>Lidl: nueva categoría «Deportes de montaña» para lidl.es</h3>
+<p>Diseñé una encuesta propia y analicé la disposición de pago de 75 personas. Con los resultados propuse una gama de precios escalonada, de iniciación a gama alta.</p>
+<div class="stats"><div><b>75</b>respuestas</div><div><b>25,93 €</b>media</div><div><b>25 €</b>moda</div><div><b>15,9 €</b>desv. típica</div></div>
+<ul>
+<li>Definí KPIs con objetivos por semáforo (add-to-cart, conversión, ticket medio, NPS), un plan de lanzamiento de 8 semanas y un piloto de 4.</li>
+<li>Analicé el mercado online español y a la competencia (Amazon, Carrefour, Mercadona, El Corte Inglés) para encontrar un hueco: equipamiento de escalada y trekking.</li>
+<li>En equipo, plan de comunicación multicanal con mockups, keywords SEO y anuncio para YouTube Ads. Produje la cuña de radio.</li>
+</ul>
+</div>
+</article>
+
+<article class="proj">
+<div class="meta">Estrategia omnicanal<br>Proyecto de clase, equipo de 4</div>
+<div>
+<h3>Brico Depôt: comunicación online y offline</h3>
+<p>Analicé el gasto anual declarado por tramo de edad (126 respuestas, un 92,8 % menores de 34 años) y lo contrasté con salarios medios. Hice el pretest del cuestionario en CATI y CAPI, y de ahí salieron mejoras concretas: separar preguntas dobles, acortar tablas Likert y reordenar bloques.</p>
+<ul>
+<li>Benchmark de comunicación de Brico Depôt frente a Leroy Merlin, Obramat e IKEA.</li>
+<li>En equipo: 4 objetivos SMART, el plan de contenidos «El que de veritat construeixes», un calendario de 6 meses y un sistema de KPIs a partir del engagement de partida (0,37 % en Instagram y 0,48 % en TikTok).</li>
+</ul>
+</div>
+</article>
+
+<article class="proj">
+<div class="meta">Marca y web<br>Proyecto de clase</div>
+<div>
+<h3>Ecovea, S.L.: identidad y web de una marca catalana de smartwatches sostenibles</h3>
+<p>Plan de negocio y presencia web de una marca ficticia, con mi compañero Ferran López. Definí la identidad visual y diseñé en Figma y Canva los mockups de las páginas clave: fichas de producto, devoluciones, FAQ, blog, newsletter, aviso legal y cookies. Redacté todos los contenidos en catalán.</p>
+<p>La decisión de marketing más interesante fue la fidelización: un club («EcoVea Members Circle», o Ecovea Cercle) con conferencias y una página privada de eventos, pensado para que el cliente vuelva sin depender de descuentos.</p>
+<div class="sw" aria-label="Paleta de marca de Ecovea"><span style="background:#C9A876;color:#1F2937">#C9A876</span><span style="background:#1F2937;color:#FAF7F2">#1F2937</span><span style="background:#FAF7F2;color:#1F2937">#FAF7F2</span><span style="background:#6B7280;color:#FAF7F2">#6B7280</span></div>
+<div class="tags"><span>Figma</span><span>Canva</span><span>Copywriting en catalán</span><span>Fidelización</span><span>Playfair Display + DM Sans</span></div>
+</div>
+</article>
+
+<article class="proj">
+<div class="meta">CRM y proyectos personales</div>
+<div>
+<h3>HubSpot, webs propias y una app para estudiantes</h3>
+<p>Práctica completa de CRM en HubSpot: contactos, pipeline, segmentación y automatización. Creo webs con HTML y WordPress con autonomía, del diseño a la puesta en marcha.</p>
+<p>Ahora desarrollo una plataforma de comunidades para estudiantes con apuntes públicos o privados y grupos de estudio. Partí del usuario: cada estudiante decide qué comparte y con quién. Sigue en desarrollo.</p>
+</div>
+</article>
+</div></section>
+
+<section><div class="w">
+<h2>Más proyectos personales</h2>
+<article class="proj">
+<div class="meta">Análisis de datos<br>Estudio personal</div>
+<div>
+<h3>Informes de riesgo y panel de oportunidades</h3>
+<p>Estudié ocho fórmulas financieras (rentabilidad esperada, volatilidad, Sharpe, diversificación de Markowitz) y las apliqué a activos reales. Hice informes de riesgo para VWRA y Nu Holdings, un panel de oportunidades de inversión y un glosario financiero. Lo que me interesa para marketing: coger datos densos y presentarlos para que alguien decida en un minuto.</p>
+<div class="tags"><span>Reporting</span><span>Visualización</span><span>HTML</span></div>
+</div>
+</article>
+<article class="proj">
+<div class="meta">Producto<br>En desarrollo</div>
+<div>
+<h3>Lumen: app de mensajería con chat y llamadas de voz</h3>
+<p>App móvil en Flutter con Firebase y Agora. Construí las pantallas de registro, chat y llamadas, y resolví por mi cuenta fallos de autenticación, almacenamiento y sincronización de usuarios. Demuestra que aprendo herramientas nuevas sin que me expliquen cada paso.</p>
+<div class="tags"><span>Autonomía</span><span>UX</span><span>Flutter</span><span>Firebase</span></div>
+</div>
+</article>
+</div></section>
+
+<section><div class="w">
+<h2>Herramientas</h2>
+<div class="two">
+<div class="box"><h3>Las que uso con soltura</h3><p>HubSpot, Figma, Canva, Google Sheets, Excel, CapCut, Adobe Color, HTML y WordPress. Estadística básica: media, mediana y desviación típica.</p></div>
+<div class="box"><h3>Las que estoy aprendiendo</h3><p>Google Analytics 4, Google Ads y Meta Ads: tengo nociones, pero todavía no he gestionado campañas con presupuesto real. Es lo que quiero aprender en las prácticas.</p></div>
+</div>
+</div></section>
+
+<section><div class="w">
+<h2>Experiencia y formación</h2>
+<article class="proj">
+<div class="meta">Prácticas<br>Institut FEDAC</div>
+<div><h3>Técnico informático en prácticas</h3><p>Mantuve la infraestructura informática y la red del centro y resolví incidencias de software y hardware, la mayoría el mismo día. Recibí reconocimiento formal de la dirección y una oferta de continuidad.</p></div>
+</article>
+<article class="proj">
+<div class="meta">05/2025 – 09/2025<br>Burger King</div>
+<div><h3>Cocinero y camarero</h3><p>Atención directa al cliente y preparación de pedidos en un entorno de mucho volumen, en equipo y con protocolos estrictos.</p></div>
+</article>
+<article class="proj">
+<div class="meta">2025 – actualidad<br>Centro de Estudios Politécnicos</div>
+<div><h3>CFGS Marketing y Publicidad</h3><p>Comunicación integrada de marketing, CRM, investigación de mercados (encuestas CAWI, CATI y CAPI), SEO y SEM, diseño y atención al cliente. Mejor analista de mercado de la clase en el curso 2025-26.</p></div>
+</article>
+<article class="proj">
+<div class="meta">2022 – 2024<br>Bemen3</div>
+<div><h3>CFGM Sistemas Microinformáticos y Redes</h3><p>Mi base técnica: sistemas, redes y soporte.</p></div>
+</article>
+</div></section>
+
+<section><div class="w">
+<h2>Por qué Eximia</h2>
+<p>Buscáis a alguien que ejecute con criterio, se mida con datos y sea honesto sobre sus límites. Es como trabajo: pregunto a la gente real con encuestas propias, saco los números y corrijo lo que falla, como en el pretest de Brico Depôt. Me interesa el puesto de Marketing Digital y Publicidad, y puedo apoyar también en redacción y maquetación web con WordPress.</p>
+</div></section>
+
+<footer><div class="w">
+<h2>Contacto</h2>
+<p>Correo: <a href="mailto:bielferrer112@gmail.com">bielferrer112@gmail.com</a></p>
+<p>Teléfono: <a href="tel:+34693046099">693 04 60 99</a></p>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/biel-ferrer-1b0092305/">linkedin.com/in/biel-ferrer-1b0092305</a></p>
+<button class="btn" data-cv hidden>Descargar mi CV (PDF)</button><span class="say" data-cvnote hidden>La descarga no está disponible en esta vista. Escríbeme y te envío el CV.</span><span class="say" role="status" data-cvmsg></span>
+</div></footer>
+<script>
+(function(){
+var B64="JVBERi0xLjQKJZOMi54gUmVwb3J0TGFiIEdlbmVyYXRlZCBQREYgZG9jdW1lbnQgKG9wZW5zb3VyY2UpCjEgMCBvYmoKPDwKL0YxIDIgMCBSIC9GMiAzIDAgUgo+PgplbmRvYmoKMiAwIG9iago8PAovQmFzZUZvbnQgL0hlbHZldGljYSAvRW5jb2RpbmcgL1dpbkFuc2lFbmNvZGluZyAvTmFtZSAvRjEgL1N1YnR5cGUgL1R5cGUxIC9UeXBlIC9Gb250Cj4+CmVuZG9iagozIDAgb2JqCjw8Ci9CYXNlRm9udCAvSGVsdmV0aWNhLUJvbGQgL0VuY29kaW5nIC9XaW5BbnNpRW5jb2RpbmcgL05hbWUgL0YyIC9TdWJ0eXBlIC9UeXBlMSAvVHlwZSAvRm9udAo+PgplbmRvYmoKNCAwIG9iago8PAovQ29udGVudHMgOCAwIFIgL01lZGlhQm94IFsgMCAwIDU5NS4yNzU2IDg0MS44ODk4IF0gL1BhcmVudCA3IDAgUiAvUmVzb3VyY2VzIDw8Ci9Gb250IDEgMCBSIC9Qcm9jU2V0IFsgL1BERiAvVGV4dCAvSW1hZ2VCIC9JbWFnZUMgL0ltYWdlSSBdCj4+IC9Sb3RhdGUgMCAvVHJhbnMgPDwKCj4+IAogIC9UeXBlIC9QYWdlCj4+CmVuZG9iago1IDAgb2JqCjw8Ci9QYWdlTW9kZSAvVXNlTm9uZSAvUGFnZXMgNyAwIFIgL1R5cGUgL0NhdGFsb2cKPj4KZW5kb2JqCjYgMCBvYmoKPDwKL0F1dGhvciAoQmllbCBGZXJyZXIpIC9DcmVhdGlvbkRhdGUgKEQ6MjAyNjEwMDkwOTM4NTUrMDAnMDAnKSAvQ3JlYXRvciAoXCh1bnNwZWNpZmllZFwpKSAvS2V5d29yZHMgKCkgL01vZERhdGUgKEQ6MjAyNjEwMDkwOTM4NTUrMDAnMDAnKSAvUHJvZHVjZXIgKFJlcG9ydExhYiBQREYgTGlicmFyeSAtIFwob3BlbnNvdXJjZVwpKSAKICAvU3ViamVjdCAoXCh1bnNwZWNpZmllZFwpKSAvVGl0bGUgKENWIEJpZWwgRmVycmVyKSAvVHJhcHBlZCAvRmFsc2UKPj4KZW5kb2JqCjcgMCBvYmoKPDwKL0NvdW50IDEgL0tpZHMgWyA0IDAgUiBdIC9UeXBlIC9QYWdlcwo+PgplbmRvYmoKOCAwIG9iago8PAovRmlsdGVyIFsgL0FTQ0lJODVEZWNvZGUgL0ZsYXRlRGVjb2RlIF0gL0xlbmd0aCA0MjY3Cj4+CnN0cmVhbQpHYiE7ZmdOKSU8JnEwTFVvWkw6Xz1WcjtJSmVwUiU6IW50WlxxT1RPUmp1LFxKSXNhVExnXkw8KjJgR2lwW2VGZzYmUyxWOClEWnBhcTRxaERWXzNkP2AjdSRqJDFsaDU/bmY2VEAqQlQ0UyFsZ2gzLUI0XS8yVUlhbUA4akRxb0xpKSMuQlddakEyKm1aSDc8SGMpRkZCKSpkaWktbVYoI0Q6dWNKbW1VNnJMY1p1Klo3UFlobj0ibWhbPWB0TjlMLikoT3U+PEBHQlpLb1kpMHAvXVY5PUFFVUZrbyNXIUNWRSxhLD0pSkFrXWxPLkQqcWI8ZUBcVlA1PjQ5Y2FrT2AxPFNQSCYjQyVkQnFoc2dcamktRzktNWppJSRTKTlea0NWLC1cWyF1b2tyYnNncixnR21OTSdTOSE4SyoqUkdYRTphZ3JpQTs5QTdhOF41LGRmK3FZRjNyRWMsW2c8O1dhMD9kQkQ7WWkpPU9cQkZnTkpRKF5BS245b0ZvVXFQJTx0c2BdWlo9YkdeRFNsXCVUJixqK1lTOlNSLio2WG5UXGMxPWg7TF5Fb1dTaTg8RVI/MFZrXGVBZSs9JT5YJypLcCh1LjFlJkQwb0RjKCMjbzEoRz9JY0xXJzlIJHRlMTUpT1hyJj9RJ2pdUi9Sc2EoJStuQHRYSSVKbzJFcUFuQWpEbzFAOCNsZ11FND1QXzUzKDdFKmE8Z2FkR2gzJC5nbDJMIU5lOSFGUnNiOipiPG0pLUptS25mPjtCOSJqZCdWPzFiQlkyWFltNyo+XzddcEJUZFVZX3VuRmokIVxoVGhhZlBTIT02b0NGYypkT1VrJjw0QXFHVkVXcnNoP2tBR28qTzxPamFkInIkQDxBTG5CZ2VhZ2BqQ28kWmx0UWYoZGVIW11vamAnKzhNXCswR15ZQzkiNmBzS3QwYzRxLyY/QGtQKytXYk5aJjBbVHBEKidacVtXUlElJSojRlQxPVxfWDw9ViY3YGI5cjVLaixWbVghclVLXzg0bEh0Yl45M0lQYUgxbzBaTkMuJEE+RyNtJD4/JDMuKXBmMzdZUjoralZtYDYxVmhNMytlM2BYJig/MWxRNSssQUVRa3BuX1FNTiUwXFosZEM9NzdwKUJNPDs8YWZXLFlgZzZlal4jRFIxTF9Ma0J0S2NUbyM4aldCK0I+ZCE0dFUuT1pXby5zLz5UR1E/NzBxQUhvRCxwOy5aNlBidWNJT24tPjtRc0g2MlZWOUVOZy1qUUY2RSlKZGo3NkVKSjVOWSsmajQ0VjFFIjRXZDRTLiRyLypwQSw2Yl5qJ3FRXzVFMGIsWllMQ2w5UEQqYVs6U005YktoZW1vaSRgNzVcO3FnJzUjMz9FUCR1OUFkU2k5Lmc/S3AyRT9EME46MCJtVk0tP2pGKEhETEBoci9FXCtFV0FVJVspPmZsQ1cxUDMjSS87XShrVk0pL2xfNVhrRD82VTVKOiRlWlkyLG0tOT0jLVQiIi9oK1g3UnA+K1lyWV9HQV1xaEo9bEBwYCtdJTNHXmpoOkhYKjklRmhTLiozYyMjakJAKzJRVjMqKEQ6Z3QqODRyTywnYT1wI2FnSnNrJ2snNENMST8zPE8lSVMubVdhTCJjbDYkLWNcaTxLcy1zQ29eZ2JESUZyRCRDVjAlXUxROV4+S0EvJTlrTnV1ZEpNSD1vXk1kMWAyZ3QmI11pRWQ1YkVVWjg4ZltFQlxlMj4+NCFLTU1gP2VKWyNSQ1w9WkQubUA6VD4zckdKal1JV1wjU2NqRDIkTS1fU3IwPXFnXl8iOD1oTWdNSTJMTHJzQihKYFdMPCo1M0dhWW5HWm1FSVEkSTVsNyFDQSdHYzJsYEg5K1tCIVUpcEA7MFxTZDhNV1BvW0RJL2NeKzwxX2Y8IyxNcC4sWWZVWFY6JT5ORkpXQDQhZWVlaFxZNFQrT24kTShvayYqaUZITFY9Lm90WiJbWHRHdGlBbChIYCU6UCZASEMqbD9UZU4tXV1faW1IXShLJVw9TzxYPlRRXVBpcUldYFhKVHRsPDY+I0tBY1E/Vm01XTUuVSVYO19KK1hWOzNfVjQna0pOa1g4cDRXVDBsWV9KNyRiazRVOUgoKixuMjc4T0A3OmJya1RqMmMiOUAmPkhvLTFmXy5KQjxFQG5ONmVdXzZtUTIhXW9scUonYGhXaWxVI1VBW0UkJTIoYiM0T29objh1akA9KCYpOCRsMzkvMEdCMmtFZ090ci5VbkdEMmItUDEtZG4rUy9RXzgsJEVdbCdRIyReOWxpJXFYWT88WGVvbiQ4SykrNHUuVEUkXTs5IVRNSEM+KHVsZztsUGYnZT9CVlFtMyQ8J1skNU9rSGZPWio/L1tKViVHNTVCJ09pQm1pPiRdazs4Sy0tRDwvSVBcX2JXTGpFU0RlMC9mKyU1YiRzYkVIYiMuaW1MMGxkUnFmJ2ttYlhYK3UmNHEyRmVrVjQ1UkEiIiktQCc0JVFMZ15UNWU2dFklPzgsNE5IIUw2bVhgbCUxNVJNRnVyP2UsYlY4IyQ/I2UnJ0tTUHJMJHFdaDFvXXJtK2hmaSFnMVouaiJNVlpAP3FrZWxJJjdLZSppNkM9WVBkJ003QC8ySiQ7KExNMGJDXWxILmpEc1tmJCVMbWkhNV5ya0AtLycnXCVzJDlSSWkqcUg1QV9zNEMhdDUuYGxMaF5xMWJIOmpubG5yZ191PCYnKDA4NipnMUpkZlFbOXE6QmphI1FTQU9FYC5vM3UnVSZ1SSdGNUxRaSdeczhSW2xgRmozZE9mJFk1STIvKCxaJFFcSjUmMUlra1pDa3VkLmReTjJdTSZNdC9SNCJNLDc9I1BlKUNlJmIzLkJpJTU4K0coRjA9cW5TZkIiaCxAVU5gNC8jKkVSNl9hTlxOQiNjU1E/PGcrJnA9VCkoamU6bVBwaCI2anJUJUVeY25JZ2BjSzk/RmxzPGFnKF9JcmpeOTEhMyJ0MUpZNyhfQUFeU0VtYWUpNCJZPCZQIkhXQj1BRnJrIXA0RTxzaTRTTCVXX2ZtJ010KFs7N2FtZDVCRyYqcSxTNE4pS1BaX11oc3IuLWh0OTllTTtrZkNrPWdbaCE0WUFcIy5cV2swN184ZldJQzBfaz4hbz43JT5CYGFJM0hCbTJhIjM4dUFtIiJoLDUjRCpjIVUlUWZjbyckMyU2LlAlZS5QR29gVkoyW1F1NjRTdC46OFxVUEsvbHVYKE5bJFVtXCJmLnB1K0dvZ3EvLF1mS2QxJWdKKCQ1K040WDkoaG1TdDtCJTYwbkQ2MXIvTi9ZQy42Xz04NzJGYEcnV0ZpMWQqKWBFYW1Dc1dvVSchODw+W3BVTW8oWE9QZi1POkNJcDhYVEhbJlpeXTdgWyk5XDJcLidDVFI4LSVbTkttLHRGQzxcSjBRcyMmZGN1RUJCaE90SVRULGQiPmphTkZAKmBULWdROm8nIUdjOjtLIWo6RSUrR2o4UyJbcWQjTj0iTyxTWyoiPDRbY0RrUSJkXChcMSQ2T05KbT4zWW1MKTBCUVQvWEErZG0mIjUqbEdyQF1WOEF1YypgMGNEUFVgZmEnIik8S187cjpGYyU1K1oqNVxtODInSE9hWEBqck0zWHFYXzYkbTpcRGcqMXViYjksYT8nX2U1MVY9WWtyaT8rOVJOKkVxaU5fV0dsaFFkbUk6RyUwIkkiXGtZL1hrJ2Y5Z2Ysbm9sWTtbaU9fNVNNQzhfIlhIRSw4YD9eJmVEZUhOLShlIW1EXWRKO2sjOE4hJik6YTs+RFg6MDpLaFRNWDtac0ZPVFBINkFQJj45Qz8uXWN1XFJYRDZkLDNwZm5ZSEssMlhqa0t1ajpbIVgpLDcjMWtOPnArQGRMTDA0aTRaWlhjKUsiW1teXyQzLnFnMVlkWjx1OC5PXGRkPSpOZD4/QE8mKjF0WkkvMCpcTiU2VGsuPTpYVFVXUSo6JipfWWorTzM+RVFnLSo0biVtU1xFTUc2QURwVmVvTV9vSiJaXWNhUTVKWCQ8bWE5X1NeSGs/O0g5Yy5tUV4oL1xgJyReTVNJXG1FWU4tW2Fca1MuZGlPV2JOX0c1PFVCNTkzRHA9PS9NSk5rT0wrJzVAJWpDT1ZCPExSPTpfOilbRDdgdCZadHFKMiljUWJDIVVnPipZRidqR047Sl8sPkNcXl04JjsoSyEtcV9gXlhwUCJcOV9kYidYa1ooSWgvMiMvQFJVbV1kLkklLSFtNWd1QS1ROFM7SSkjOC4/Pi9uSmtpUmlBS01kcVJyKmBGOiVzcD4iaXQmZjY2VHM7N0U8c3VNLXVXLDlSXiZ1SiQoSV9fUW1GYXBhUzc4KUU7Xi1tcU1rRm1iWE4zOmdUTVpqKyxgMTssbzxfOC08Xj1VUDwrTjojUylAI0dJXD1fVShJbU1Kc2I5Q1Z0ZSFcP0Y/WzZUOTg/KWlQJ3NGZSJUbFEwQSltKGVEUjlcR1ZxN0diI0hDbGVnSUNBakJOb1xZTm8sOE1cT1VETW5CXU1pZkFlJVZgKi1VQlJrIkA8NkBZR2IwRmk6XiJIXW9FJEU5cyNlKEYvPEdeTC1aL1lhNSZmVyppNldJSCRmUVxZbzkqZ1hdS1FiMypfLkVcW1wnU2A2VSZYOiJsLXNYRz9AWEVDZlIiZyVbXzMvWT9pRl5WaUksVTBkYTQnMUZDNjJ0S0M/QTgiQ0hRJ2ZbLChdLFJSQilDQnNnWmhMQ2ZOTjQickA3NF1XTEFaTCtyWStwIlM7bmw3c09qMGEobjMjW0QkPmdDcFBEVTRSa09daVZRPUtsYFhjZCtVPCVXL2JhRlROJVIxPUBVRGhLcEEzKCYlbWsxZFM5Qztvc2UyOCdpbCQjdV5FT1RnNXUtNEZoRklVTnBMMWkkN2BOZi8/N1cyXSJPSmNgKXRYS291QVFAPGUuRStJOypZY1RgViw0XiZ0PjA2SjBhRDs6Oj44TCNpQCFwKC5QRWQ+TGc/U24lZXFGITJbSzssSzdNSFReV2U4Q08hbDk9MWVYJWpzWzhoR0w+T3RuR2RtYDxFMDUiJllIQGtWSU1qcVNRYWJAJjtoTUlcWG03YVE4TSJjTG8qblMoMjQ+LGkwZ0pyRWo2RE86LSwjNjFWW2NoKDsrNGwwLS0xK2o0bzFSZydvOVtJNDUtSGJlV00mbT1kSkw5QVpkWzw5RiUrJTVvWSskcmwyZGk5LEtXbWtpSGREaW1CQ0NWTTo+XT5qV2lRT0krZCQjaSI1VDpbYm9KNyFTJlghclM2OE1JOTc5YFBNXF9GNCghLj1vJzgyUzhTcFYtXz1PTUc/MyZYTytmRk5KOSNSJ1U2QnVzdSU3PlZjKCNaTHVfYS4jWVliITttTVk8VmY0c2tpK1gvI19SaGNgbSVHPCpBdEUoVCo6T1puPkJRK0tscjZfQ1BycW4zZFo1dWY9UmFzKSY7Z0xuWChoR0VMYS4rL0owO044KkNCQnNPSVdvT1Q/V0AsM2EiQ0Q+S2ExRmoyaj4hbG1gdHN1XFYoU25uU29zblgsLkllYSIhXkA5Pj9UJnI5Ij5ySnJlUG5iUl8tNm5OSUFYPDwtYlFpaEomdTJpbWUoPEdJRzM8V09EYm5bIzUkVGdMOUokaEAjcUMkdGNrbWsvaGU+WjNbTWgySyduWT9HSmBPK0Y8V2QtMTEvcX4+ZW5kc3RyZWFtCmVuZG9iagp4cmVmCjAgOQowMDAwMDAwMDAwIDY1NTM1IGYgCjAwMDAwMDAwNjEgMDAwMDAgbiAKMDAwMDAwMDEwMiAwMDAwMCBuIAowMDAwMDAwMjA5IDAwMDAwIG4gCjAwMDAwMDAzMjEgMDAwMDAgbiAKMDAwMDAwMDUyNCAwMDAwMCBuIAowMDAwMDAwNTkyIDAwMDAwIG4gCjAwMDAwMDA4NzEgMDAwMDAgbiAKMDAwMDAwMDkzMCAwMDAwMCBuIAp0cmFpbGVyCjw8Ci9JRCAKWzxiMGRiYTg1YmZlMDE4NzViMWNmMjkzM2ZiMjVlZGM5MT48YjBkYmE4NWJmZTAxODc1YjFjZjI5MzNmYjI1ZWRjOTE+XQolIFJlcG9ydExhYiBnZW5lcmF0ZWQgUERGIGRvY3VtZW50IC0tIGRpZ2VzdCAob3BlbnNvdXJjZSkKCi9JbmZvIDYgMCBSCi9Sb290IDUgMCBSCi9TaXplIDkKPj4Kc3RhcnR4cmVmCjUyODgKJSVFT0YK";
+var btns=document.querySelectorAll('[data-cv]'),notes=document.querySelectorAll('[data-cvnote]'),msgs=document.querySelectorAll('[data-cvmsg]');
+function say(t){msgs.forEach(function(m){m.textContent=t})}
+function noDl(){notes.forEach(function(n){n.hidden=false})}
+function bytes(){var s=atob(B64),a=new Uint8Array(s.length);for(var i=0;i<s.length;i++)a[i]=s.charCodeAt(i);return a}
+if(!window.claude||!window.claude.use){noDl();return}
+window.claude.use('downloads').then(function(d){
+if(!d){noDl();return}
+btns.forEach(function(b){b.hidden=false;b.addEventListener('click',function(){
+d.save({filename:'CV_Biel_Ferrer.pdf',data:bytes()}).then(function(){say('CV guardado.')}).catch(function(e){
+if(e&&e.code==='declined'){return}
+say('No se pudo guardar el CV. Escríbeme y te lo envío.')})})})
+}).catch(noDl);
+})();
+</script>
+</body>
+</html>
